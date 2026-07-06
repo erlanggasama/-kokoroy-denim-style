@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Kokoroy - Celana Denim Bandung"
+version = "1.0.0"
+id = "artifacts/kokoroy"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25348
+
+[services.development]
+run = "pnpm --filter @workspace/kokoroy run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/kokoroy", "run", "build" ]
+publicDir = "artifacts/kokoroy/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25348"
+BASE_PATH = "/"
