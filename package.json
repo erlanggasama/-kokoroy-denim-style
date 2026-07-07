@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "node": ">=18.0.0"
   },
   "scripts": {
     "preinstall": "node -e \"const ua=process.env.npm_config_user_agent; if(!ua || !ua.startsWith('pnpm')) { console.error('❌ Use pnpm instead'); process.exit(1); }\"",
