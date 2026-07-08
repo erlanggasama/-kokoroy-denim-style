@@ -3,4 +3,4 @@
     { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
     { "src": "/(.*)", "dest": "https://kokoroy.replit.app/$1" }
   ]
-}
+} 
