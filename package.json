@@ -4,9 +4,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "pnpm -r --filter=./apps/web run build",
-    "typecheck": "pnpm -r run typecheck",
-    "dev": "pnpm -r --filter=./apps/web run dev"
+    "build": "tsc"
   },
   "devDependencies": {
     "prettier": "^3.8.4",
