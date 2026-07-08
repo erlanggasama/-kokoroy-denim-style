@@ -1,5 +1,4 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "https://kokoroy.replit.app/$1" }
-  ]
+  "version": 2,
+  "public": true
 }
