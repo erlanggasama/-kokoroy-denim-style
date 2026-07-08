@@ -1,6 +1,5 @@
 {
-  "routes": [
-    { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
-    { "src": "/(.*)", "dest": "https://kokoroy.replit.app/$1" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "https://kokoroy.replit.app/$1" }
   ]
-} 
+}
